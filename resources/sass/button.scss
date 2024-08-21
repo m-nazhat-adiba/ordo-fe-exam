@@ -1,0 +1,82 @@
+$primary-color: #336913;
+$secondary-color: #518bbb;
+$tertiary-color: white;
+$text-white: $tertiary-color;
+$text-green: $primary-color;
+$text-blue: $secondary-color;
+$color-disabled: #888888;
+
+.basic-button {
+    border: solid 1px;
+    border-radius: 9999px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    // variants
+    &.bb-primary {
+        background-color: $primary-color;
+        color: $text-white;
+        border-color: $primary-color;
+    }
+    &.bb-primary-outlined {
+        background-color: transparent;
+        color: $text-green;
+        border-color: $primary-color;
+    }
+    &.bb-secondary {
+        background-color: $secondary-color;
+        color: $text-white;
+        border-color: $secondary-color;
+    }
+    &.bb-secondary-outlined {
+        background-color: transparent;
+        color: $secondary-color;
+        border-color: $secondary-color;
+    }
+    &.bb-tertiary {
+        background-color: $tertiary-color;
+        color: $text-blue;
+        border-color: $tertiary-color;
+    }
+    &.bb-tertiary-outlined {
+        background-color: transparent;
+        color: $text-white;
+        border-color: $text-white;
+    }
+    &.bb-disabled {
+        background-color: $color-disabled;
+        color: $text-white;
+        border-color: $color-disabled;
+    }
+    &.bb-disabled-outlined {
+        background-color: transparent;
+        color: $color-disabled;
+        border-color: $color-disabled;
+    }
+
+    // size
+    &.bb-large {
+        height: 53px;
+        padding-inline: 30px;
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 600;
+    }
+    &.bb-medium {
+        height: 43px;
+        padding-inline: 30px;
+        font-size: 15px;
+        line-height: 22px;
+        font-weight: 600;
+    }
+    &.bb-small {
+        height: 33px;
+        padding-inline: 18px;
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: 600;
+    }
+}

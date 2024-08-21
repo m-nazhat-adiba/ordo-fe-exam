@@ -1,0 +1,10 @@
+@import 'navigation';
+@import 'homepage';
+@import 'button';
+
+.home-layout {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}

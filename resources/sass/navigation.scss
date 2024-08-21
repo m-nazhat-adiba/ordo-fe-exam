@@ -1,0 +1,38 @@
+// navbar
+.navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-block: 25px;
+    padding-inline: 70px;
+    background-color: white;
+}
+
+.nav-link {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+
+    li {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+.footer {
+    background-color: #1d4009;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-block: 21px;
+
+    p {
+        color: white;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 700;
+    }
+}

@@ -1,6 +1,9 @@
 $primary-color: #336913;
+$primary-color-accent: #284c13;
 $secondary-color: #518bbb;
+$secondary-color-accent: #467ca9;
 $tertiary-color: white;
+$tertiary-color-accent: rgba(255, 255, 255, 0.85);
 $text-white: $tertiary-color;
 $text-green: $primary-color;
 $text-blue: $secondary-color;
@@ -15,46 +18,93 @@ $color-disabled: #888888;
     align-items: center;
     justify-content: center;
     gap: 5px;
+    transition: color 0.3s, border-color 0.3s; // Smooth transition for hover effect
+
     // variants
     &.bb-primary {
         background-color: $primary-color;
         color: $text-white;
         border-color: $primary-color;
+
+        &:hover {
+            background-color: $primary-color-accent;
+            color: $text-white;
+            border-color: $primary-color-accent;
+        }
     }
+
     &.bb-primary-outlined {
         background-color: transparent;
         color: $text-green;
         border-color: $primary-color;
+
+        &:hover {
+            background-color: $primary-color;
+            color: $text-white;
+            border-color: $primary-color;
+        }
     }
+
     &.bb-secondary {
         background-color: $secondary-color;
         color: $text-white;
         border-color: $secondary-color;
+
+        &:hover {
+            background-color: $secondary-color-accent;
+            color: $text-white;
+            border-color: $secondary-color-accent;
+        }
     }
+
     &.bb-secondary-outlined {
         background-color: transparent;
         color: $secondary-color;
         border-color: $secondary-color;
+
+        &:hover {
+            background-color: $secondary-color;
+            color: $text-white;
+            border-color: $secondary-color;
+        }
     }
+
     &.bb-tertiary {
         background-color: $tertiary-color;
         color: $text-blue;
         border-color: $tertiary-color;
+
+        &:hover {
+            background-color: $tertiary-color-accent;
+            color: $text-blue;
+            border-color: $tertiary-color-accent;
+        }
     }
+
     &.bb-tertiary-outlined {
         background-color: transparent;
         color: $text-white;
         border-color: $text-white;
+
+        &:hover {
+            background-color: $tertiary-color;
+            color: $text-blue;
+            border-color: $tertiary-color;
+        }
     }
+
     &.bb-disabled {
         background-color: $color-disabled;
         color: $text-white;
         border-color: $color-disabled;
+        cursor: not-allowed; // Show that button is disabled
     }
+
     &.bb-disabled-outlined {
         background-color: transparent;
         color: $color-disabled;
         border-color: $color-disabled;
+        cursor: not-allowed; // Show that button is disabled
     }
 
     // size
@@ -65,6 +115,7 @@ $color-disabled: #888888;
         line-height: 28px;
         font-weight: 600;
     }
+
     &.bb-medium {
         height: 43px;
         padding-inline: 30px;
@@ -72,6 +123,7 @@ $color-disabled: #888888;
         line-height: 22px;
         font-weight: 600;
     }
+
     &.bb-small {
         height: 33px;
         padding-inline: 18px;

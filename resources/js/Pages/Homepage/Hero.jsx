@@ -4,6 +4,15 @@ import LogoCarousel from "./_components/LogoCarousel";
 import ProgressCard from "./_components/ProgressCard";
 
 const Hero = () => {
+    const leaderboardData = [
+        { name: "Budi Hartanto", tree: 350 },
+        { name: "Dewi Sartika", tree: 330 },
+        { name: "Eko Wahyudi", tree: 200 },
+        { name: "Rina Kartika", tree: 190 },
+        { name: "Agus Prasetyo", tree: 140 },
+        { name: "Irfan Setiawan", tree: 80 },
+    ];
+
     return (
         <div className="hero-container">
             <div className="hero-wrapper">
@@ -21,7 +30,7 @@ const Hero = () => {
                     </div>
                 </section>
                 <section className="leaderboard">
-                    <Leaderboard />
+                    <Leaderboard data={leaderboardData} />
                 </section>
             </div>
             <LogoCarousel />
